@@ -72,4 +72,9 @@ Este repositório foi criado especialmente para acompanhar e apoiar sua jornada 
 Licença
 MIT — consulte o arquivo LICENSE.
 
-⭐ Se este material te ajudou, lembre-se de deixar uma estrela no repositório!
+---
+
+## Autor
+Professor: Max Müller
+
+Se este projeto ajudou você a evoluir, deixe uma ⭐ e compartilhe o conhecimento. Obrigado por usar este repositório!
