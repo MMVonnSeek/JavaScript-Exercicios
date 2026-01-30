@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ciano-eletrico: #00FFFF;
+    --roxo-profundo: #6A0DAD;
+    --rosa-choque: #FF69B4;
+    --cinza-claro: #D9D9D9;
+    --laranja-tangerina: #FFA500;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Alexandria', sans-serif;
+    background-color: var(--roxo-profundo);
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-section {
+    color: var(--ciano-eletrico);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 15vw; 
+    max-width: 120px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 1.5em; 
+}
+
+.logo-text a {
+    text-decoration: none;
+    color: #00FFFF;
+
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.cliente-button:hover, .loja-button:hover {
+    background-color: #ebebeb;
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(77, 75, 75, 0.4);
+}
+
+.cliente-button, .loja-button {
+    display: flex;
+    width: 90%; 
+    max-width: 600px; 
+    height: 80px;
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.back-button {
+    position: fixed; 
+    bottom: 20px; 
+    left: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 35px;
+    background-color: var(--laranja-tangerina);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--roxo-profundo); 
+    margin: 0; 
+    transition: background-color 0.25s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(77, 75, 75, 0.4);
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 20px; 
+    }
+
+    .logo {
+        width: 20vw;
+        max-width: 100px;
+    }
+
+    .cliente-button, .loja-button {
+        height: 60px;
+    }
+
+    .button-section {
+        gap: 15px;
+        padding: 20px 0;
+    }
+}
